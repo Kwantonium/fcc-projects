@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">What is the best fruit - survey</h1>
+      <p id="description">This is the only survey that actively tries to gather info on what truly is the best fruit</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label id="name-label" for="name">Name:</label>
+          <input required type="text" id="name" placeholder="e.g., Jane Doe">
+          <br>
+          <label id="email-label" for="email">Email:</label>
+          <input required type="email" id="email" placeholder="e.g., habb@hobb.com">
+          <br>
+          <label id="number-label" for="number">Age:</label>
+          <input type="number" id="number" placeholder="25" min="3" max="120">
+        </fieldset>
+        <fieldset>
+          <legend>The survey</legend>
+          <p>Now the time has come. What is the best fruit?<p>
+          <select name="fruit" id="dropdown">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+          </select>
+          <p>On a scale from 0-3x, how many times better is the number one fruit than the second?</p>
+          <input id="0times" type="radio" name="scale" value="0">
+          <label for="0times">0x</label>
+          <input id="1times" type="radio" name="scale" value="1">
+          <label for="1times">1x</label>
+          <input id="2times" type="radio" name="scale" value="2">
+          <label for="2times">2x</label>
+          <p>What are your preferred foods to have with your favorite fruit?</p>
+          <input type="checkbox" id="chips" value="chips" name="preferred-food">
+          <label for="chips">Chips</label>
+          <input type="checkbox" id="chocolate" value="chocolate" name="preferred-food">
+          <label for="chocolate">Chocolate</label>
+          <input type="checkbox" id="nothing" value="nothing" name="preferred-food">
+          <label for="nothing">Nothing</label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional comments</legend>
+          <label for="comments">Give us some passionate words about your fruit!</label><br><br>
+          <textarea id="comments" cols="30" rows="10" name="comments"></textarea><br><br>
+          <button id="submit" type="submit">Submit survey</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
