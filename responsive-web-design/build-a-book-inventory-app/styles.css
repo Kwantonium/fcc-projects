@@ -1,0 +1,84 @@
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+span {
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+}
+
+
+tr[class="read"] {
+  background-image: linear-gradient(#fff 1%, #95FF95 90%);
+}
+
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#fff 1%, #D3E2D3 90%);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#fff 1%, #FFDD97 90%);
+}
+
+tr[class="header"] {
+    background-image: linear-gradient(#fff 1%, #74D3FA 90%);
+}
+
+tr[class="to-read"] span[class="status"] {
+  background-image: linear-gradient(#FF847A 0%, #EC301F 100%);
+  border: 2px solid #ff201F;
+  border-radius: 50px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  background-image: linear-gradient(#F8CE7C 0%, #C2850A 100%
+  );
+  border: 2px solid #C2850A;
+  border-radius: 50px;
+}
+
+tr[class="read"] span[class="status"] {
+  background-image: linear-gradient(#82ED82 0%, #24E024 100%);
+  border: 2px solid #1fc41f;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+span[class="status"], span[class^="rate"] {
+  width: 6rem;
+  height: 1.5rem;
+  padding: 0px;
+  text-align: center;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #B3B1B1;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #F4F0F0;
+}
+
+span[class~="one"] > :first-child {
+  background-image: linear-gradient(#FFE55E 0%, #FFD503 100%);
+}
+
+span[class~="two"] > :first-child, span[class~="two"] > :nth-child(2) {
+  background-image: linear-gradient(#FFE55E 0%, #FFD503 100%);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(#FFE55E 0%, #FFD503 100%);
+}
+
