@@ -1,0 +1,179 @@
+
+/* head */
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+html {
+  font-family: Lato, sans-serif;
+  background: #EEEEEE;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* nav bar */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+#logo {
+  width: 65vw;
+  padding-top: 40px;
+}
+
+#header-img {
+  width: 300px;
+}
+
+#nav-bar {
+  padding: 17px;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  text-wrap: nowrap;
+}
+
+@media (min-width: 650px) {
+  #nav-bar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+}
+
+
+/* main content */
+
+main {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 650px) {
+  main {
+    margin-top: 100px;
+  }
+
+  #logo {
+    padding-top: 0px;
+  }
+}
+
+#hero {
+  padding-bottom: 50px;
+}
+
+#form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#email {
+  width: 40%;
+  padding: 5px;
+}
+
+#submit {
+  padding: 5px;
+}
+
+#features {
+  display: grid;
+  grid-template-areas:
+  "mat_pic materials"
+  "ship_pic shipping"
+  "qa_pic quality";
+  width: 80%;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+  padding-bottom: 50px;
+}
+
+#materials {
+  grid-area: materials;
+}
+
+#shipping {
+  grid-area: shipping;
+}
+
+#quality {
+  grid-area: quality;
+}
+
+#mat_pic {
+  grid-area: mat_pic;
+}
+
+#ship_pic {
+  grid-area: ship_pic;
+}
+
+#qa_pic {
+  grid-area: qa_pic;
+}
+
+#mat_pic, #ship_pic, #qa_pic {
+  font-size: 3rem;
+  color: orange;
+}
+
+#pricing {
+  padding: 100px;
+}
+
+/* footer */
+
+#footer {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #DDDDDD;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  text-wrap: nowrap;
+}
+
+#footer p {
+  display: flex;
+  justify-content: flex-end;
+  color: #444;
+}
